@@ -33,3 +33,23 @@ Run `npm run json:server` for run the server. Its a dummy backend server for add
 ## Note
 
 1. Loader not added for add a contact and update a contact
+
+## Strat point
+
+main.ts -> app.module.ts -> app.component.ts -> index.html -> app.component.html
+
+## Application folder stucture
+
+Feature modules
+
+- core
+  - services
+    - contact service
+- shared
+  - models/interfaces
+    - contact interface
+- contact
+- add contact
+- list contact
+
+components - header component - footer component - page not found
