@@ -1,0 +1,81 @@
+<div class="container">
+  <div class="row mt-5 mb-5">
+    <div class="col-md-12">
+      <div class="contacts-wrapper">
+        <div class="heading-wrapper">
+          <h3>Manage Contacts</h3>
+          <div class="btn-wrapper">
+            <button
+              type="button"
+              class="btn btn-primary"
+              (click)="addNewContact()"
+            >
+              <i class="fa fa-plus-circle mr-2" aria-hidden="true"></i> Add New
+              Contact
+            </button>
+          </div>
+        </div>
+        <div class="list-wrapper">
+          <div class="table-responsive">
+            <table class="table table-striped">
+              <thead>
+                <tr>
+                  <th>First Name</th>
+                  <th>Last Name</th>
+                  <th>Email</th>
+                  <th>Phone Number</th>
+                  <th>Status</th>
+                  <th>Action</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr *ngIf="isLoading" class="loading-wrapper">
+                  <td colspan="6">
+                    <h4>Loading contacts...</h4>
+                  </td>
+                </tr>
+                <ng-container *ngIf="!isLoading">
+                  <tr
+                    *ngFor="
+                      let contact of contactsListData
+                        | paginate
+                          : {
+                              itemsPerPage: 10,
+                              currentPage: p,
+                              totalItems: total
+                            }
+                    "
+                  >
+                    <td>{{ contact.FirstName }}</td>
+                    <td>{{ contact.LastName }}</td>
+                    <td>{{ contact.Email }}</td>
+                    <td>{{ contact.PhoneNumber }}</td>
+                    <td>
+                      {{ contact.Status === "true" ? "Active" : "In Active" }}
+                    </td>
+                    <td>
+                      <i
+                        class="fa fa-pencil me-2"
+                        aria-hidden="true"
+                        (click)="onUpdateContact(contact.id)"
+                      ></i>
+                      <i
+                        class="fa fa-ban"
+                        aria-hidden="true"
+                        (click)="onDeleteContact(contact.id)"
+                      ></i>
+                    </td></tr
+                ></ng-container>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <pagination-controls
+          (pageChange)="p = $event"
+          *ngIf="!isLoading"
+        ></pagination-controls>
+      </div>
+    </div>
+  </div>
+</div>

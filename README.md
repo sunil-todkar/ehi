@@ -1,4 +1,4 @@
-# EHI
+# ehi
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.0.4.
 
@@ -25,3 +25,11 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+
+## Run the server
+
+Run `npm run json:server` for run the server. Its a dummy backend server for adding, updating and deleting a contacts.
+
+## Note
+
+1. Loader not added for add a contact and update a contact

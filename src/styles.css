@@ -1,1 +1,78 @@
 /* You can add global styles to this file, and also import other style files */
+@font-face {
+  font-family: ArchivoBlack-Regular;
+  src: url("./assets/fonts/ArchivoBlack-Regular.ttf");
+}
+
+@font-face {
+  font-family: Poppins-Regular;
+  src: url("./assets/fonts/Poppins-Regular.ttf");
+}
+
+body {
+  height: 100%;
+  font-family: Poppins-Regular;
+  padding: 0;
+  margin: 0;
+  background-color: #f5f5f5;
+}
+
+.btn-primary {
+  background-color: #5cb85c;
+  color: #fff;
+  font-size: 16px;
+  border-color: #5cb85c;
+}
+
+.btn-primary:hover,
+.btn-primary.active,
+.btn-primary:focus {
+  color: #fff;
+  background-color: #5cb85c;
+  border-color: #5cb85c;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.invalid-feedback {
+  display: block;
+}
+
+@media (min-width: 576px) {
+  .modal-dialog {
+    max-width: 600px;
+  }
+  .modal-body {
+    padding: 20px 40px;
+  }
+}
+
+.fa {
+  cursor: pointer;
+}
+
+.fa-pencil {
+  color: #f7ba02;
+}
+
+.fa-ban {
+  color: #f55a4e;
+}
+
+h2#swal2-title {
+  font-size: 20px !important;
+}
+
+.swal2-styled.swal2-confirm {
+  background-color: #5cb85c !important;
+  color: #fff !important;
+  font-size: 16px !important;
+  border-color: #5cb85c !important;
+}
+
+ul.ngx-pagination {
+  text-align: center;
+  padding-bottom: 20px;
+}

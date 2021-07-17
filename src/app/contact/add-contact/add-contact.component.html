@@ -1,0 +1,124 @@
+<div class="container">
+  <div class="row mt-5">
+    <div class="col-md-12">
+      <div class="heading-wrapper">
+        <h3>ADD CONTACTS</h3>
+      </div>
+      <div class="add-contact-wrapper">
+        <form [formGroup]="contactForm" (ngSubmit)="onSubmit()">
+          <div class="form-group">
+            <label for="FirstName">First Name</label>
+            <input
+              type="text"
+              class="form-control"
+              id="FirstName"
+              formControlName="FirstName"
+              [ngClass]="{ 'is-invalid': submitted && f.FirstName.errors }"
+            />
+            <div
+              *ngIf="submitted && f.FirstName.errors"
+              class="invalid-feedback"
+            >
+              <div *ngIf="f.FirstName.errors.required">
+                This field is required
+              </div>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="LastName">Last Name</label>
+            <input
+              type="text"
+              class="form-control"
+              id="LastName"
+              formControlName="LastName"
+              [ngClass]="{ 'is-invalid': submitted && f.LastName.errors }"
+            />
+            <div
+              *ngIf="submitted && f.LastName.errors"
+              class="invalid-feedback"
+            >
+              <div *ngIf="f.LastName.errors.required">
+                This field is required
+              </div>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="Email">Email address</label>
+            <input
+              type="email"
+              class="form-control"
+              id="Email"
+              formControlName="Email"
+              [ngClass]="{ 'is-invalid': submitted && f.Email.errors }"
+            />
+            <div *ngIf="submitted && f.Email.errors" class="invalid-feedback">
+              <div *ngIf="f.Email.errors.required">This field is required</div>
+              <div *ngIf="f.Email.errors.email">
+                Please enter valid email address
+              </div>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="PhoneNumber">Phone Number</label>
+            <input
+              type="text"
+              class="form-control"
+              id="PhoneNumber"
+              formControlName="PhoneNumber"
+              maxlength="10"
+              [ngClass]="{ 'is-invalid': submitted && f.PhoneNumber.errors }"
+            />
+            <div
+              *ngIf="submitted && f.PhoneNumber.errors"
+              class="invalid-feedback"
+            >
+              <div *ngIf="f.PhoneNumber.errors.required">
+                This field is required
+              </div>
+              <div *ngIf="f.PhoneNumber.errors.pattern">
+                Please, Enter 10 digit Mobile Number.
+              </div>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="Status">Status</label>
+            <div class="status-wrapper">
+              <div class="custom-control custom-radio me-4">
+                <input
+                  id="active"
+                  type="radio"
+                  class="custom-control-input me-2"
+                  value="true"
+                  name="Status"
+                  formControlName="Status"
+                />
+                <label class="custom-control-label" for="male">Active</label>
+              </div>
+
+              <div class="custom-control custom-radio">
+                <input
+                  id="inactive"
+                  type="radio"
+                  class="custom-control-input me-2"
+                  value="false"
+                  name="Status"
+                  formControlName="Status"
+                />
+                <label class="custom-control-label" for="female"
+                  >In Active</label
+                >
+              </div>
+            </div>
+          </div>
+          <hr />
+          <div class="form-group">
+            <button type="submit" class="btn btn-primary me-4">ADD</button>
+            <button type="button" class="btn btn-primary" (click)="onBack()">
+              BACK
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>

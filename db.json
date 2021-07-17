@@ -1,0 +1,116 @@
+{
+  "contacts": [
+    {
+      "FirstName": "Sunil",
+      "LastName": "Todkar",
+      "Email": "sunil.todkar@gmail.com",
+      "PhoneNumber": "8698165771",
+      "Status": "true",
+      "id": 1
+    },
+    {
+      "FirstName": "Priyanka",
+      "LastName": "Shinde",
+      "Email": "priyankashinde@gmail.com",
+      "PhoneNumber": "9564321765",
+      "Status": "true",
+      "id": 2
+    },
+    {
+      "FirstName": "Amar",
+      "LastName": "Deshmukh",
+      "Email": "amar.deshmukh@yahoo.com",
+      "PhoneNumber": "7878879385",
+      "Status": "false",
+      "id": 3
+    },
+    {
+      "FirstName": "Pooja",
+      "LastName": "Patil",
+      "Email": "pooja1992@yahoo.com",
+      "PhoneNumber": "9845454545",
+      "Status": "true",
+      "id": 4
+    },
+    {
+      "FirstName": "Akshay",
+      "LastName": "Powar",
+      "Email": "akshay.powar@gmail.com",
+      "PhoneNumber": "7878879385",
+      "Status": "false",
+      "id": 5
+    },
+    {
+      "FirstName": "Amar",
+      "LastName": "Deshmukh",
+      "Email": "amar.deshmukh@yahoo.com",
+      "PhoneNumber": "7878879385",
+      "Status": "false",
+      "id": 6
+    },
+    {
+      "FirstName": "Tina",
+      "LastName": "Jagtap",
+      "Email": "teena.jagtap@yahoo.com",
+      "PhoneNumber": "7878879385",
+      "Status": "true",
+      "id": 7
+    },
+    {
+      "FirstName": "Rohini",
+      "LastName": "Talekar",
+      "Email": "rohini.talekar@gmail.com",
+      "PhoneNumber": "8754456464",
+      "Status": "false",
+      "id": 8
+    },
+    {
+      "FirstName": "Raj",
+      "LastName": "magdum",
+      "Email": "raj.magdum@gmail.com",
+      "PhoneNumber": "676767676767",
+      "Status": "true",
+      "id": 9
+    },
+    {
+      "FirstName": "Jay",
+      "LastName": "Sehgal",
+      "Email": "jay@gmail.com",
+      "PhoneNumber": "1234567893",
+      "Status": "true",
+      "id": 10
+    },
+    {
+      "FirstName": "Saurabh",
+      "LastName": "Bhilare",
+      "Email": "saurabh.bhilare@gmail.com",
+      "PhoneNumber": "9823723243",
+      "Status": "true",
+      "id": 11
+    },
+    {
+      "FirstName": "Riya",
+      "LastName": "Kokate",
+      "Email": "riya.kokate@gmail.com",
+      "PhoneNumber": "9456786432",
+      "Status": "false",
+      "id": 14
+    },
+    {
+      "FirstName": "Rudra",
+      "LastName": "Bhole",
+      "Email": "rudra.bhole@hotmail.com",
+      "PhoneNumber": "9823723243",
+      "Status": "true",
+      "id": 13
+    },
+    {
+      "FirstName": "Foram",
+      "LastName": "Jagani",
+      "Email": "foram.jagani@gmail.com",
+      "PhoneNumber": "9065432556",
+      "Status": "false",
+      "id": 14
+    }
+  ]
+}
