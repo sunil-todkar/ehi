@@ -27,7 +27,7 @@ export class ContactListComponent implements OnInit {
   loadContactData() {
     this.isLoading = true;
     this.ContactService.showContacts().subscribe((response: any) => {
-      console.log('Contact Response Is - ', response);
+      // console.log('Contact Response Is - ', response);
       this.contactsListData = response;
       this.total = this.contactsListData.length;
       this.isLoading = false;
